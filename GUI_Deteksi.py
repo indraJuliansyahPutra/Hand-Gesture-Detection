@@ -16,6 +16,7 @@ class VideoStreamWidget:
     def __init__(self, cap, window):
         self.window = window
         self.cap = cap
+        self.window.title("HandSignAI")
 
         self.canvas = tk.Canvas(window, width=640, height=480)
         self.canvas.pack()
